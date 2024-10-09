@@ -4,6 +4,8 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from pdfminer.high_level import extract_text
 from typing import BinaryIO, List, Dict, Any
+from dotenv import load_dotenv
+load_dotenv() 
 
 embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
 
