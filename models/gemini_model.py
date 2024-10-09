@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from supabase.client import create_client
 from langchain.chains import RetrievalQA,LLMChain
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv() 
 
 supabase_url = os.getenv("SUPABASE_PROJECT_URL")
 supabase_key = os.getenv("SUPABASE_API_KEY")
